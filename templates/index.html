@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ICVT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>ICVT</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Загрузить изображение</button>
+    </form>
+    <div id="result"></div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
